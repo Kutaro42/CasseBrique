@@ -13,6 +13,7 @@ BubbleWindow::BubbleWindow(QWidget *parent)
     createMenuBar(); // Les menus
     createToolBar(); // La toolbar
 
+    statusBar()->showMessage("Welcome on Bubble Bubble");
 }
 
 BubbleWindow::~BubbleWindow() {}
@@ -30,7 +31,7 @@ void BubbleWindow::createActions()
     settingsAction = new QAction("&Settings",this);
     connect(settingsAction, &QAction::triggered, this, &BubbleWindow::settingsRequested);
 
-    scoreAction = new QAction("Q& Score lader",this);
+    scoreAction = new QAction("&Score lader",this);
     connect(scoreAction, &QAction::triggered,this, &BubbleWindow::scoresRequested);
 
     creditAction = new QAction("&Credit",this);
@@ -49,4 +50,13 @@ void BubbleWindow::createMenuBar()
 void BubbleWindow::createToolBar()
 {
 
+}
+
+
+void BubbleWindow::setStatusMessage(const QString &message, int timeoutMs) {
+    if (timeoutMs > 0) {
+        statusBar()->showMessage(message, timeoutMs);
+    } else {
+        statusBar()->showMessage(message);
+    }
 }

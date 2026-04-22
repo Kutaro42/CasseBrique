@@ -15,6 +15,10 @@ public:
     BubbleWindow(QWidget *parent = nullptr);
     ~BubbleWindow();
 
+    /// Affiche un message dans la barre d'état
+    void setStatusMessage(const QString &message, int timeoutMs = 0);
+
+
 private:
 
     void createActions();
