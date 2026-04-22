@@ -1,37 +1,26 @@
 
 #include "bubble.h"
 
-class Bubble {
-protected:
-    QPointF posistion_ ;
-    double radius_;
-    bool alive;
-public:
-    int points();
-    QColor color();
-    bool mustBeCleared();
+
+
+int NormalBubble::points_(){
+    //code
 };
 
-class NormalBubble : public Bubble {
-
-public:
-    int points();
-    QColor color();
-    bool mustBeCleared();
+QColor NormalBubble::color_() {
+    //code
 };
 
-class BonusBubble : public Bubble {
-
-public:
-    int points();
-    QColor color();
-    bool mustBeCleared();
+bool NormalBubble::mustBeCleared_() {
+    //code
 };
 
-class MalusBubble : public Bubble {
+BonusBubble::BonusBubble() {
+    //code
 
-public:
-    int points();
-    QColor color();
-    bool mustBeCleared();
+};
+
+MalusBubble::MalusBubble() {
+    //code
+
 };
