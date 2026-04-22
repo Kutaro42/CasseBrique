@@ -1,6 +1,10 @@
+#include "bubble.h"
+#include "bubblegamemodel.h"
 #include "bubblewindow.h"
 
 #include <QApplication>
+
+
 
 int main(int argc, char *argv[])
 {
