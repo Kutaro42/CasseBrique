@@ -13,7 +13,8 @@ SOURCES += \
     bubblewindow.cpp
 
 HEADERS += \
-    bubblewindow.h
+    bubblewindow.h \
+    config.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
