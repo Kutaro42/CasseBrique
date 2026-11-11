@@ -1,4 +1,4 @@
-# 🫧 BubblePop
+# BubblePop
 
 Jeu d'éclatement de bulles développé en **C++** avec le framework **Qt**.
 Le joueur doit éclater des bulles pour marquer des points, en évitant les pièges, au fil de niveaux successifs et contre la montre.
